@@ -1,7 +1,8 @@
-.App {
-	position: relative;
-	--mapHeight: 450px;
-	/*--mapHeight: 900px;*/
+#map {
+	bottom: 0;
+	position: fixed;
+	top: 60px;
+	width: 50%;
 }
 
 

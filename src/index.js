@@ -8,7 +8,6 @@ import css from './css/main.css';
 import App from './js/components/App/App';
 
 const init = async () => {
-	console.log('init');
 	App.init()
 };
 

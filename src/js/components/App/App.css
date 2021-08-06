@@ -1,7 +1,44 @@
-.App {
-	position: relative;
-	--mapHeight: 450px;
-	/*--mapHeight: 900px;*/
+#app {
+	margin: 0 auto;
+	max-width: 600px;
+	padding: 0;	
 }
 
+#app h1 {
+	background-color: #FFF;
+	margin: 0;
+	padding: 1rem 0 0.5rem 0;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
+#scroller {
+	padding: 0;
+	position: relative;
+}
+#features {
+	font-family: sans-serif;
+	margin-left: 5%;
+	overflow-y: hidden;
+	position: relative;
+	width: 50%;
+	z-index: 0;
+}
+section {
+	background-color: rgba(255,255,255,0.8);
+	font-size: 0.9rem;
+	line-height: 25px;
+	margin: 100vh 0;
+	padding: 10px 20px;
+}
+section.active {
+	opacity: 1;
+}
+section:last-child {
+	border-bottom: none;
+	margin-bottom: 200px;
+}
 
+#features h3 {
+	margin: 7px 0 10px 0;
+}
