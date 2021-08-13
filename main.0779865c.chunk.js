@@ -193,7 +193,7 @@ function addCensusLayer(options) {
       'source': 'lst',
       'layout': {},
       'paint': {
-        'fill-color': ['step', ['get', metric], 'rgba(255,245,240,0.45)', 308.03, '#fed6c4', 311.42, '#fca487', 313, '#fc7050', 314, '#eb362a', 314.88, '#ba1419', 316.1, '#67000d', 321, '#D1D2D4'],
+        'fill-color': ['step', ['get', metric], 'rgba(255,245,240,0.65)', 308.03, '#fed6c4', 311.42, '#fca487', 313, '#fc7050', 314, '#eb362a', 314.88, '#ba1419', 316.1, '#67000d', 321, '#D1D2D4'],
         'fill-opacity': 0.45
       }
     }, options.layer); // LINES
