@@ -19,6 +19,19 @@ function init(data, options) {
 		pitch: options.pitch	
 	});
 
+	// Add geolocate control to the map.
+	map
+		.addControl(
+			new maplibregl.GeolocateControl({
+				positionOptions: {
+					enableHighAccuracy: true
+				},
+				trackUserLocation: true
+			}))
+		.addControl(
+			new maplibregl.NavigationControl()
+		);
+
 	// On every scroll event, check which element is on screen
 	window.onscroll = (map) => {
 		const sections = Object.keys(data);
