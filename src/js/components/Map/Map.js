@@ -1,5 +1,4 @@
 import maplibregl from 'maplibre-gl';
-// import mapboxConfig from '../../data/mapbox-config';
 
 // CSS
 import './Map.css';
@@ -21,7 +20,7 @@ function init(data, options) {
 	});
 
 	// On every scroll event, check which element is on screen
-	window.onscroll = function () {
+	window.onscroll = (map) => {
 		const sections = Object.keys(data);
 
 		for (let i = 0, l = sections.length; i < l; i++) {
@@ -35,6 +34,7 @@ function init(data, options) {
 	};
 }
 
+
 function setActiveChapter(section, activeSection, data) {
 	if (section === activeSection) return;
 	 
@@ -45,11 +45,11 @@ function setActiveChapter(section, activeSection, data) {
 	 
 	activeSection = section;
 }
+
 function isElementOnScreen(id) {
 	var element = document.getElementById(id);
 	var bounds = element.getBoundingClientRect();
 
-	console.log(bounds.top, window.innerHeight)
 	return bounds.top < (window.innerHeight * 2) && bounds.bottom > 0;
 }
 
